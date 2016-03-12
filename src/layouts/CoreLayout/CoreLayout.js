@@ -17,7 +17,7 @@ import styles from '../../styles/core.scss'
 function CoreLayout ({ children }) {
   return (
     <fluid>
-      <Row>
+      <Row style={{marginLeft: '0px'}}>
         <Col md={10} className={styles.container}>
           <Header />
           <NavBar />
