@@ -1,0 +1,15 @@
+.navItemWidth {
+  width: 19%;
+}
+
+.navBarContainer {
+  background-color: #acacac;
+  a {
+    text-align: center;
+    size: 18px;
+    color: #ffffff;
+    &:hover {
+      background: #acacac !important;
+    }
+  }
+}

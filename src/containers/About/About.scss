@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+  padding: 24.5px 40px 40px 25px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.15);
+  border: solid 1px #dddddd;
+}
+
+.lineHeight {
+  line-height: 28px;
+}
+
+.upperTextStyle {
+  @extend .lineHeight;
+  position: absolute;
+  top: 20%;
+  left: 36%;
+  transform: translate(-1%, -5%);
+}
+
+.copyRightLink {
+  border: solid 1px #dddddd;
+  size: 20px;
+  line-height: 28px;
+  color: #fff;
+  background: #fbb107;
+  padding: 11px 5px 11px 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+.marginTop {
+  margin-top: 25px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  float: none;
+  content: '';
+  clear: both;
+}

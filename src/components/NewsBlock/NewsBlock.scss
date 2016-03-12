@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.15);
+	border: solid 1px #dddddd;
+  padding-top: 7px;
+  margin-bottom: 30.4px;
+}
+
+.tag {
+  float: left;
+  padding: 9px 14.3px 0px 0px;
+  color: #fff;
+  size: 17.2px;
+  text-align: right;
+  width: 112px;
+	height: 43.5px;
+	background-color: #029341;
+}
+
+.title {
+  position: absolute;
+  top: 29%;
+  left: 15%;
+  transform: translate(-15%, -113%);
+  color: #029341;
+  font-size: 18px;
+  float: left;
+  text-align: center;
+}
+
+.content {
+  margin-top: 21.2px;
+  padding-left: 25px;
+  padding-bottom: 30.6px;
+  size: 14px;
+  color: #666666;
+  span {
+    margin-right: 34px;
+  }
+  p {
+    margin-top: 24.3px;
+  }
+}
+
+.clear {
+  content: '';
+  float: none;
+  clear: both;
+}

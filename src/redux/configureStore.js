@@ -7,6 +7,7 @@ export default function configureStore (initialState = {}, history) {
   // Compose final middleware and use devtools in debug environment
   let middleware = applyMiddleware(thunk, routerMiddleware(history))
   if (__DEBUG__) {
+    console.log('DEGUG MODE');
     const devTools = window.devToolsExtension
       ? window.devToolsExtension()
       : require('containers/DevTools').default.instrument()

@@ -1,0 +1,22 @@
+.container {
+  width: 86%;
+  display: border-box;
+}
+
+.left {
+  float: left
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  content: '';
+  float: none;
+  clear:both;
+}
+
+.center {
+  text-align: center;
+}

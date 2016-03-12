@@ -1,0 +1,39 @@
+.sidebarContainer {
+	background-color: #cc0000
+}
+
+.sidebarLogoContainer {
+	padding: 43px 34px 22px 34px;
+}
+
+.sidebarNavBar {
+	ul {
+		padding: 0px;
+		list-style: none;
+		li {
+			padding-top: 6px;
+			padding-bottom: 6px;
+			margin: 0 10px;
+			text-align: center;
+			a {
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+.black {
+	background: #000000;
+}
+
+.green {
+	background: #029341;
+}
+
+.blue {
+	background: #0054a6;
+}
+
+.red {
+	background: #cc0000;
+}
