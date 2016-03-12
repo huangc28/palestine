@@ -1,9 +1,9 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
 import {fluid, Row, Col} from 'react-bootstrap';
 import Header from '../../components/Header/Header';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import NavBar from '../../components/NavBar/NavBar';
-import styles from '../../styles/core.scss'
+import styles from '../../styles/core.scss';
 
 // Note: Stateless/function components *will not* hot reload!
 // react-transform *only* works on component classes.
@@ -30,11 +30,11 @@ function CoreLayout ({ children }) {
         </Col>
       </Row>
     </fluid>
-  )
+  );
 }
 
 CoreLayout.propTypes = {
   children: PropTypes.element
-}
+};
 
-export default CoreLayout
+export default CoreLayout;

@@ -4,15 +4,13 @@ import styles from './GuestBook.scss';
 
 class GuestBook extends Component {
   render () {
-    console.log('props');
-    console.log(this.props.posts[0]);
     return (
       <div className={styles.root}>
-      <table>
-        <thead>
-          <tr>
-            <td className={styles.guestBookNotification}>
-              <div>
+        <table>
+          <thead>
+            <tr>
+              <td className={styles.guestBookNotification}>
+                <div style={{border: '1px dotted #CCCCCC'}}>
                   <p>
                     留言須知：姓名和Email為必填，但是Email並不會顯示在網站上以避免垃圾郵件的攻擊。另外請打開瀏覽器的 Javascript 才能正常留言。
                   </p>
@@ -39,7 +37,7 @@ class GuestBook extends Component {
                     </div>
                   </td>
                 </tr>
-              )
+              );
             })}
           </tbody>
         </table>
@@ -48,9 +46,11 @@ class GuestBook extends Component {
   }
 };
 
+GuestBook.propTypes = {
+  posts: React.PropTypes.array
+};
+
 const mapStateToProps = (state) => {
-  console.log('state');
-  console.log(state);
   return {
     posts: state.posts.posts
   };

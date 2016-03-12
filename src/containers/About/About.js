@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Grid, Row, Col} from 'react-bootstrap';
 import classname from 'classnames/bind';
 import styles from './About.scss';
 const cx = classname.bind(styles);
@@ -11,14 +10,14 @@ const cx = classname.bind(styles);
  * - 若雪介紹
  */
 export default class About extends Component {
-  render() {
+  render () {
     return (
       <div className={styles.container}>
         <table>
           <tbody>
             <tr>
               <td>
-                <img  src={require('./rachel_memory.png')}></img>
+                <img src={require('./rachel_memory.png')}></img>
               </td>
               <td>
                 若雪．柯利是國際團結運動組織的非武力志工。2003年3月16日，她在迦薩保護巴勒斯坦民房避免被鏟除時，被以色列推土機輾死。也因為她的死，我們有機會閱讀到她寫給父母的家書 {'<若雪書信>'}。我們非常感動於她在家書中所流露的敏感、善意與助人的心。我們想要紀念這樣平凡的精神，同時也希望更多人能夠瞭解巴勒斯坦人在爭取自由及結束以色列佔領上所做的奮鬥。
@@ -35,7 +34,7 @@ export default class About extends Component {
             </tr>
             <tr>
               <td colSpan='2' style={{paddingTop: '30px'}} className={styles.lineHeight}>
-                <a href="#" className={cx('copyRightLink')}>版權聲明</a>
+                <a href='#' className={cx('copyRightLink')}>版權聲明</a>
               </td>
             </tr>
             <tr>

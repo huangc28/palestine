@@ -1,7 +1,7 @@
 export const CREATE_POST_STORE = 'create-post-store';
 
 export function createPostsStore (posts) {
-  return dispatch => {
+  return (dispatch) => {
     // console.log('posts');
     // console.log(posts);
     // console.log(dispatch);
