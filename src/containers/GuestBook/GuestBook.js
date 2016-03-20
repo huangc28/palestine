@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Post from '../../components/Post/Post';
 import styles from './GuestBook.scss';
 
 class GuestBook extends Component {
@@ -24,23 +25,19 @@ class GuestBook extends Component {
               </td>
             </tr>
           </thead>
-          <tbody>
-            {this.props.posts.map((post, i) => {
-              return (
-                <tr key={i}>
-                  <td>
-                    <div className={styles.postHead}>
-                      {post.list_author}
-                    </div>
-                    <div className={styles.postBody}>
-                      {post.list_post_content}
-                    </div>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
         </table>
+
+        {/* posts container */}
+        <div>
+          {this.props.posts.map((post, i) => {
+            return (
+              <Post
+                key={i}
+                post={post}
+              />
+            );
+          })}
+        </div>
       </div>
     );
   }
